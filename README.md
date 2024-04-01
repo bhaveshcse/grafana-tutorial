@@ -1,7 +1,7 @@
 # grafana-tutorial
 This is grafana tutorial repo.
-1  mkdir grafana-config
-    2  cd grafana-config/
+mkdir grafana-config
+cd grafana-config/
     3  wget https://raw.githubusercontent.com/grafana/loki/v2.9.4/cmd/loki/loki-local-config.yaml -O loki-config.yaml
     4  docker run --name loki -d -v $(pwd):/mnt/config -p 3100:3100 grafana/loki:2.9.4 -config.file=/mnt/config/loki-config.yaml
     5  wget https://raw.githubusercontent.com/grafana/loki/v2.9.4/clients/cmd/promtail/promtail-docker-config.yaml -O promtail-config.yaml
